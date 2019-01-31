@@ -23,6 +23,11 @@ class DynamicGraphsServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/migrations' => base_path('database/migrations'),
         ]);
+        $this->publishes([
+            __DIR__.'/storage' => base_path('storage'),
+        ]);
+          $this->publishes([
+        __DIR__.'/assets' => base_path('public');
     }
 
     /**
