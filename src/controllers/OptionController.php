@@ -40,7 +40,7 @@ for($j=0;$j<$n;$j++) {
 			'value'=>$v,
 			'ques_id'=>$i
 		];
-		//Option::create($data);
+		Option::create($data);
 		}
 		
 	}
