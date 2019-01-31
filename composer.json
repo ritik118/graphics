@@ -1,0 +1,24 @@
+{
+    "name": "ritik/dynamicgraphs",
+    "authors": [
+        {
+            "name": "ritik118",
+            "email": "ritikkumar6081@gmail.com"
+        }
+    ],
+	"extra": {
+        "laravel": {
+            "providers": [
+                "ritik\\dynamicgraphs\\DynamicGraphsServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+		"App\\": "app/",
+            "ritik\\dynamicgraphs\\": "src/"
+        }
+    },
+	"minimum-stability": "dev"
+	
+}
