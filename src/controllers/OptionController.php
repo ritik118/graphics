@@ -60,7 +60,7 @@ for($j=0;$j<$n;$j++) {
  	public function search(){
  		$options=Option::all();
         
-        return View('optiontable')->with('alloption',$options);
+        return View('ritik.dynamicgraphs.optiontable')->with('alloption',$options);
  	}
 
 }

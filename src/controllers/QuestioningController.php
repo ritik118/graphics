@@ -13,7 +13,7 @@ class QuestioningController extends Controller
     	 $labels=Questioning::all('label');
     	 $comment=Questioning::find(1)->comments()->get();
     	 
-    	return View('printradio')->with('label',$labels)->with('comment',$comment);
+    	return View('ritik.dynamicgraphs.printradio')->with('label',$labels)->with('comment',$comment);
 	}
 
 	public function store(){
