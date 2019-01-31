@@ -30,7 +30,7 @@ class AnswerController extends Controller
 			'ques_id' => $q,
 			'option_id'=>$opop
 			];
-		//Answer::create($data);
+		Answer::create($data);
     		}
     	}
     }

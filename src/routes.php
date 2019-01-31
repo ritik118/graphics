@@ -14,6 +14,8 @@ Route::get('/radiocom','QuestioningController@searchcomment');
 
 Route::get('/answer', 'AnswerController@store');
 
+Route::get('/json','OptionController@store');
+
 Route::get('/postcomment','commentController@store');
 
 });
