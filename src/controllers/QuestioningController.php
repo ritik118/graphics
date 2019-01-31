@@ -4,8 +4,8 @@ namespace ritik\dynamicgraphs\controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
- use App\Questioning;
- use App\Answer;
+ use ritik\dynamicgraphs\models\Questioning;
+ use ritik\dynamicgraphs\models\Answer;
 class QuestioningController extends Controller
 {
 

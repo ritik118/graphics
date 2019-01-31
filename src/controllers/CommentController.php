@@ -4,8 +4,8 @@ namespace ritik\dynamicgraphs\controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Comment;
-use App\Questioning;
+use ritik\dynamicgraphs\models\Comment;
+use ritik\dynamicgraphs\models\Questioning;
 class CommentController extends Controller
 {
     

@@ -17,6 +17,7 @@ class DynamicGraphsServiceProvider extends ServiceProvider
          $this->loadRoutesFrom(__DIR__.'/routes.php');
         $this->loadMigrationsFrom(__DIR__.'/migrations');
         $this->loadViewsFrom(__DIR__.'/views', 'dynamicgraphs');
+        $this->loadModelsFrom(__DIR__.'/models', 'dynamicgraphs');
         $this->publishes([
             __DIR__.'/views' => base_path('resources/views/ritik/dynamicgraphs'),
         ]);

@@ -4,8 +4,8 @@ namespace ritik\dynamicgraphs\controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Questioning;
-use App\Option;
+use ritik\dynamicgraphs\models\Questioning;
+use ritik\dynamicgraphs\models\Option;
 class OptionController extends Controller
 {
     

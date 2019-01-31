@@ -4,9 +4,9 @@ namespace ritik\dynamicgraphs\controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Questioning;
-use App\Option;
-use App\Answer;
+use ritik\dynamicgraphs\models\Questioning;
+use ritik\dynamicgraphs\models\Option;
+use ritik\dynamicgraphs\models\Answer;
 class AnswerController extends Controller
 {
 	
