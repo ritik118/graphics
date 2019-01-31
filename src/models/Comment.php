@@ -11,6 +11,6 @@ class Comment extends Model
 
     	public function questionings()
     {
-        return $this->belongsTo('App\Questioning');
+        return $this->belongsTo('ritik\dynamicgraphs\models\Questioning');
     }
 }

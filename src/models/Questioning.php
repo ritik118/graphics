@@ -10,17 +10,13 @@ class Questioning extends Model
     protected $fillable = ['label','name'];
      public function comments()
     {
-        return $this->hasOne('App\Comment','ques_id');
+        return $this->hasOne('ritik\dynamicgraphs\models\Comment','ques_id');
     }
 	
 
     public function options()
     {
-        return $this->hasMany('App\Option','ques_id');
-    }
-    public function answers()
-    {
-        return $this->hasManyThrough('App\Answer','App\Option','ques_id','option_id','id','id');
+        return $this->hasMany('ritik\dynamicgraphs\models\Option','ques_id');
     }
    
 }
