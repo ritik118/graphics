@@ -16,6 +16,7 @@ Route::get('/answer', 'AnswerController@store');
 
 Route::get('/json','OptionController@store');
 
+Route::get('/newcomment','commentController@store');
 Route::get('/postcomment','commentController@store');
 
 });
