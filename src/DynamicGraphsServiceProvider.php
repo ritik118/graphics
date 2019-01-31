@@ -27,7 +27,8 @@ class DynamicGraphsServiceProvider extends ServiceProvider
             __DIR__.'/storage' => base_path('storage'),
         ]);
           $this->publishes([
-        __DIR__.'/assets' => base_path('public/js');
+        __DIR__.'/assets' => base_path('public/js'),
+        ]);
     }
 
     /**
