@@ -15,7 +15,7 @@ class CommentController extends Controller
 			'ques_id' => $i,
 			'comment' => "Ritik"
 		];
-		Questioning::create($data);
+		Comment::create($data);
 		}
 	}
     

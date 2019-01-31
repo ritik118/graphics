@@ -29,6 +29,9 @@ class DynamicGraphsServiceProvider extends ServiceProvider
           $this->publishes([
         __DIR__.'/assets' => base_path('public/js'),
         ]);
+          $this->publishes([
+        __DIR__.'/layout' => base_path('resources/views/layouts'),
+        ]);
     }
 
     /**
