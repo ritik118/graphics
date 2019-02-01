@@ -6,12 +6,15 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use ritik\dynamicgraphs\models\Questioning;
 use ritik\dynamicgraphs\models\Option;
+use ritik\dynamicgraphs\models\Answer;
 use ritik\dynamicgraphs\models\Comment;
 class OptionController extends Controller
 {
     
 
 	public function store(){
+
+
 
 			$path=storage_path()."/json/rawdata.json";
 $json =file_get_contents($path);
@@ -95,7 +98,7 @@ $questioning=new Questioning();
     	}
 
 
-for($i=1;$i<35;$i++){
+for($i=1;$i<sizeof($label);$i++){
 			$data=[
 			'ques_id' => $i,
 			'comment' => "Ritik"
@@ -103,7 +106,7 @@ for($i=1;$i<35;$i++){
 		Comment::create($data);
 		}
 
-		return redirect()->action('QuestioningController@index');
+		return view('ritik.dynamicgraphs.store');
 
  	}
 
