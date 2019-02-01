@@ -11,7 +11,7 @@ like piechart,barchart,columnchart,linechart and also to write comment and downl
 
 You can install the package using composer
 
-    composer require ritik\dynamicgraphs
+    composer require ritik/dynamicgraphs
     
 Publish the configurations
 
