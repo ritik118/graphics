@@ -13,7 +13,7 @@ Route::get('/radiocom','QuestioningController@searchcomment');
 
 Route::get('/answer', 'AnswerController@store');
 
-Route::get('/printradio','OptionController@store');
+Route::get('/store','OptionController@store');
 
 
 Route::get('/postcomment','commentController@store');
