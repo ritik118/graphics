@@ -16,36 +16,7 @@ class QuestioningController extends Controller
     	return View('ritik.dynamicgraphs.printradio')->with('label',$labels)->with('comment',$comment);
 	}
 
-	public function store(){
-		
-		$path=storage_path()."/json/rawdata.json";
-$json =file_get_contents($path);
-$jsonarray=json_decode($json,true);
-$n=sizeof($jsonarray);
-$label=array();
-$name=array();
-$count=0;
-for($i=0;$i<$n;$i++){
-	if($jsonarray[$i]['type'] == "radio-group"){
-	$label[$count]=$jsonarray[$i]['label'];
-	$name[$count]=$jsonarray[$i]['name'];
-	$count++;
-}
-}
-
-
-	for($i=0; $i<sizeof($label); $i++){
-		$data=[
-			'label' => $label[$i],
-			'name' => $name[$i]
-		];
-		Questioning::create($data);
-		}
-
-
-
-
- 	}
+	
  	public function getId(Request $request){
  		$choice=$request->choices;
  		$choices=Questioning::select('id')->where('label','=',$choice)->get();
