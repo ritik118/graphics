@@ -13,8 +13,8 @@ Route::get('/radiocom','QuestioningController@searchcomment');
 
 Route::get('/answer', 'AnswerController@store');
 
-Route::get('/store','OptionController@store');
-
+Route::get('/store','QuestioningController@store');
+Route::get('/optionstore','OptionController@store')->name('optionstore');
 
 Route::get('/postcomment','commentController@store');
 
