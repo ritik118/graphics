@@ -8,8 +8,8 @@ class Option extends Model
 {
     public $timestamps = false;
     protected $fillable = ['label','value','ques_id'];
-     public function questionings()
+    public function questionings()
     {
-        return $this->belongsTo('ritik\dynamicgraphs\models\Questioning','ques_id');
+        return $this->belongsTo('ritik\dynamicgraphs\models\Questioning', 'ques_id');
     }
 }

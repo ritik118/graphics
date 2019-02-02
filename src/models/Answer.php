@@ -11,6 +11,6 @@ class Answer extends Model
 
     public function questionings()
     {
-        return $this->belongsTo('ritik\dynamicgraphs\models\Questioning','ques_id');
+        return $this->belongsTo('ritik\dynamicgraphs\models\Questioning', 'ques_id');
     }
 }

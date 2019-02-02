@@ -6,10 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Comment extends Model
 {
-	public $timestamps = false;
+    public $timestamps = false;
     protected $fillable = ['ques_id','comment'];
 
-    	public function questionings()
+    public function questionings()
     {
         return $this->belongsTo('ritik\dynamicgraphs\models\Questioning');
     }
