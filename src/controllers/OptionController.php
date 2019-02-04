@@ -50,9 +50,10 @@ class OptionController extends Controller
         return redirect()->route('commentstore');
     }
 
-    public function search(){
+    public function search()
+    {
         $options=Option::all();
         
-        return View('ritik.dynamicgraphs.optiontable')->with('alloption',$options);
+        return View('ritik.dynamicgraphs.optiontable')->with('alloption', $options);
     }
 }
