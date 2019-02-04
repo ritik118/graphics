@@ -13,7 +13,7 @@
     </head>
 
     <body>
-    	
+    	<h1>Graph Can be rendered on</h1>
     	<table class="table table-bordered">
   <thead>
     <tr>

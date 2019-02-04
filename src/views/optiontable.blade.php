@@ -13,7 +13,7 @@
     </head>
 
     <body>
-    	
+    	<h1>For each Graph question Options can be</h1>
     	<table class="table table-bordered">
   <thead>
     <tr>
