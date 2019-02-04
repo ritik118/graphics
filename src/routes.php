@@ -15,12 +15,6 @@ Route::group(['namespace'=>'ritik\dynamicgraphs\controllers'], function () {
 
     Route::get('/optionstore', 'OptionController@store')->name('optionstore');
     Route::get('/optiontable', 'OptionController@search');
-
-    Route::get('/answerstore', 'AnswerController@store')->name('answerstore');
-    
-
-    
-    
     
     Route::get('/commentstore', 'CommentController@storenew')->name('commentstore');
     Route::get('/postcomment', 'commentController@store');

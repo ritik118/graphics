@@ -47,7 +47,7 @@ class OptionController extends Controller
             }
         }
 
-        return redirect()->route('answerstore');
+        return redirect()->route('commentstore');
     }
 
     public function search(){
