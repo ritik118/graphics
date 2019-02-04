@@ -45,7 +45,13 @@ class QuestioningController extends Controller
         return View('ritik.dynamicgraphs.printradio')->with('label', $labels)->with('comment', $comment);
     }
 
-    
+    public function getTable()
+    {
+         $ques=Questioning::all();
+        
+        return View('ritik.dynamicgraphs.questiontable')->with('allquestion',$ques);
+    }
+
     public function getId(Request $request)
     {
         $choice=$request->choices;
