@@ -10,7 +10,7 @@ like piechart,barchart,columnchart,linechart also write a comment for particular
 
 You can install the package using composer
 
-    composer require ritik\dynamicgraphs
+    composer require ritik/dynamicgraphs
     
 Publish the configurations
 
