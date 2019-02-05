@@ -12,7 +12,7 @@ class CommentController extends Controller
     public function storenew()
     {
         $label=Questioning::count();
-        for ($i=1;$i<$label;$i++) {
+        for ($i=1;$i<=$label;$i++) {
             $data=[
             'ques_id' => $i,
             'comment' => "Ritik"
