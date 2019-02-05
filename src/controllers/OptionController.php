@@ -29,10 +29,13 @@ class OptionController extends Controller
         }
         for ($i=1; $i<=sizeof($labeln); $i++) {
             $post=Questioning::find($i)->get();
-            $label1=$post[$i-1]->label;
+            $namee=$post[$i-1]->name;
 
             for ($j=0;$j<$n;$j++) {
-                if ($jsonarray[$j]['label'] == $label1) {
+               if($jsonarray[$j]['type'] == "header" || $jsonarray[$j]['type'] == "paragraph"){
+
+                }
+                else if ($jsonarray[$j]['name'] == $namee) {
                     foreach ($jsonarray[$j]['values'] as $key => $value) {
                         $l=$value['label'];
                         $v=$value['value'];
